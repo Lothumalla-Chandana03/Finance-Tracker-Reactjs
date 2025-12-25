@@ -1,0 +1,44 @@
+/* Main dashboard container */
+.page {
+  padding: 20px;
+  margin-left: 280px;        /* 👈 leaves space for sidebar */
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Summary cards layout */
+.summary-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Summary card base */
+.summary-card {
+  flex: 1;
+  padding: 18px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Colors */
+.summary-card.income {
+  background-color: #16a34a;
+}
+
+.summary-card.expense {
+  background-color: #dc2626;
+}
+
+.summary-card.balance {
+  background-color: #2563eb;
+}
+
+/* Headings spacing */
+.page h2 {
+  margin-bottom: 15px;
+}

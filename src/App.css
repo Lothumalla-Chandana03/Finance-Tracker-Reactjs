@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page {
+  padding: 20px;
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.summary-cards {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.summary-card.income { background: #10b981; }
+.summary-card.expense { background: #ef4444; }
+.summary-card.balance { background: #3b82f6; }
+
+.toggle-switch {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.form-container {
+  max-width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
+
+.form-container button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.error { color: red; }
+
+input, select, button { font-family: inherit; }

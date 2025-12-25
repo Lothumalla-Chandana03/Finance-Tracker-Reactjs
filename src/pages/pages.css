@@ -1,0 +1,23 @@
+.page {
+  flex: 1;
+  padding: 20px;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.summary-card.balance { background-color: #16a34a; }
+.summary-card.income { background-color: #3b82f6; }
+.summary-card.expense { background-color: #f97316; }
