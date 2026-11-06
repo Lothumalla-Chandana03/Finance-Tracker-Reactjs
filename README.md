@@ -1,55 +1,67 @@
-# Finance Tracker
+# Finance Tracker – Web Application
 
-A React-based Finance Tracker application that helps users manage income and expense transactions with authentication and dashboard analytics.
+## About the Project
+Finance Tracker is a personal finance management web application developed using React.js.
 
-## Features
+It helps users manage their income and expenses, track transactions and view their financial summary.
 
-- User Signup and Login
-- JWT Authentication
-- Protected Routes
-- Add, Edit, Delete Transactions
-- Income and Expense Tracking
-- Dashboard with Total Income, Expense, and Balance
-- LocalStorage and API Data Toggle
-- Responsive UI
+The web application communicates with a shared Node.js and Express.js backend.
 
 ## Technologies Used
-
 - React.js
-- React Router DOM
-- Context API
 - JavaScript
-- CSS3
-- REST API
-- JWT Authentication
+- React Router
+- Context API
+- Fetch API
+- LocalStorage
+- CSS
 
-## Key Implementations
+## Features
+- User Registration and Login
+- Add Income and Expense Transactions
+- View All Transactions
+- Update and Delete Transactions
+- Search Transactions
+- Filter Transactions
+- Dashboard with Income, Expense and Balance
+- Category-Wise Summary
+- CSV Export
+- Protected Routes
 
-- Authentication using JWT tokens
-- Protected Routes using React Router
-- Global State Management using Context API
-- CRUD Operations for Transactions
-- Centralized API Handling
-- Dynamic Switching between LocalStorage and Backend API
+## Project Structure
+- `src/` – Main application source
+- `components/` – Reusable UI components
+- `pages/` – Application pages
+- `contexts/` – Shared application state
+- `api.js` – Backend API communication
+- `App.js` – Main application and routing
 
-## Installation
+## Application Flow
+1. User registers or logs in.
+2. Authentication is handled through the backend.
+3. The application uses the authentication token for protected API requests.
+4. Users can manage their income and expense transactions.
+5. The dashboard displays financial summaries.
+6. Users can search, filter and export transaction records.
+
+## Backend Connection
+The web application connects to the shared Finance Tracker backend:
+
+`https://finance-tracker-backend-ng8p.onrender.com`
+
+## Installation and Setup
+
+1. Clone the repository.
+2. Install dependencies:
 
 ```bash
-git clone <repository-url>
 npm install
-npm start
 ```
 
-## Learning Outcomes
+3. Configure the backend API URL if required.
+4. Start the application using the development script in `package.json`.
 
-- React Hooks (useState, useEffect)
-- Context API
-- Routing and Navigation
-- Authentication Flow
-- API Integration
-- CRUD Operations
-- Component Reusability
 
-## Author
 
-Chandana
+## Purpose
+The application provides an easy-to-use web interface for managing personal finances and tracking transactions.
